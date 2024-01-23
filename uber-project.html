@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- mobile navbar script start here -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        
+         .a10{
+            border: 1px solid white;
+            width: 160px;
+            padding:22px;
+            border-radius:20px;
+            text-align:center;
+            background-color: white;
+            margin-top: 65px;
+        } 
+    
+        .nav_bar{
+      background-color: black;
+      width: 100%;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(10/250px);
+      grid-template-rows: repeat(8/250px);
+      gap: 50px;
+      justify-content: space-around;
+      
+    }
+    .left-bar,.dropdown,.right-bar{
+      display: inline-block;
+    }
+   .left_list{
+     grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 3;
+   }
+   .right_list{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+     grid-row-end: 3;
+
+   }
+  
+   .right-bar-link,.left-bar{
+         text-decoration: none;
+         color: white;
+   }
+   li{
+    list-style: none;
+   }
+   .hover1:hover{
+      background-color: blue;
+   }
+        main{
+         display: grid;
+            
+         }
+        
+        .section1{
+         border: 1px solid black;
+         background-color: black;
+         width: 100%;
+         padding:5%;
+         margin-top: -25px;
+         display: grid;
+         gap: 40px;
+         grid-template-columns: auto auto auto auto auto auto auto auto auto;
+         grid-template-rows: auto auto auto auto auto auto auto;
+        }
+        .a7,.a8,.a9{
+         color:white;
+        }
+
+        .input1{
+         border: 1px solid white;
+         width:75%;
+         height: 60px;
+         border-radius: 15px;
+         background-color: whitesmoke;
+        
+        }
+        .a9{
+         margin-top: 15px;
+        }
+
+        .box1{
+         display: grid;
+         grid-column-start: 1;
+         grid-column-end: 3;
+         grid-row-start: 2;
+         grid-row-end: 4;
+        }
+        .box2{
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        }
+          
+        .section2,.section4{
+         padding: 4%;
+         display: grid;
+         grid-template-columns:repeat(10/120px);
+         grid-template-rows:auto auto auto auto auto ;
+         gap: 55px;
+        }
+        .box3,.box7{
+         grid-column-start: 1;
+         grid-column-end: 3;
+         grid-row-start: 1 ;
+         grid-row-end: 5;
+        }
+        .box4,.box8{
+         grid-column-start: 6;
+         grid-column-end: 9;
+         grid-row-start: 2;
+         grid-row-end: 7;
+
+        }
+        .black-button_1{
+         border: 1px solid greenyellow;
+         width: 200px;
+         padding: 12px 10px 12px 12px;
+         background-color: black;
+         color: white;
+         border-radius: 10px;
+        }
+        .section3{
+         padding: 4%;
+         display: grid;
+         grid-template-columns:repeat(10/120px);
+         grid-template-rows:auto auto auto auto auto auto;
+         gap: 65px;
+        }
+        .box5{
+         grid-column-start: 1;
+         grid-column-end: 3;
+         grid-row-start: 2;
+         grid-row-end: 5;
+        }
+        .box6{
+         grid-column-start: 5;
+         grid-column-end: 8;
+         grid-row-start: 1;
+         grid-row-end: 7;
+        }
+        .section4{
+         padding: 4%;
+         display: grid;
+         grid-template-columns:repeat(10/120px);
+         grid-template-rows:auto auto auto auto auto ;
+         gap: 50px;
+        }
+        .section5{
+         border: 1px solid black;
+        }
+        .box9,.box10{
+         border: 1px solid white;
+         background-color: white;
+         width: 80%;
+         display: grid;
+         grid-template-columns:repeat(10/90px);
+         grid-template-rows:repeat(8/60px) ;
+      
+
+        }
+        h5{
+         padding: 20px;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 1;
+         grid-row-end: 2; 
+       }
+        .a18,.a22{
+         grid-column-start: 1;
+         grid-column-end: 3;
+         grid-row-start:2 ;
+         grid-row-end: 7;
+   
+       }
+       .a19,.a23{
+         justify-content: center;
+         grid-column-start: 3;
+         grid-column-end: 4;
+         grid-row-start: 3;
+         grid-row-end: 4; 
+       }
+       .a24{
+         grid-column-start: 3;
+         grid-column-end: 4;
+         grid-row-start: 4;
+         grid-row-end: 5; 
+       }
+       .a21,.a25{
+         grid-column-start: 4;
+         grid-column-end: 5;
+         grid-row-start: 3;
+         grid-row-end: 4; 
+       }
+       .section5{
+        border: 1px solid whitesmoke;
+         background-color: whitesmoke;
+         padding: 20px;
+         display: grid;
+         grid-template-columns:repeat(6/50px);
+         grid-template-rows:auto auto auto auto  ;
+         gap: 20px;
+       }
+    
+       .box9{
+         grid-column-start: 1;
+         grid-column-end: 5;
+         grid-row-start: 2;
+         grid-row-end: 3; 
+       }
+       .box10{
+         grid-column-start: 5;
+         grid-column-end: 7;
+         grid-row-start: 2;
+         grid-row-end: 3; 
+       }
+       .footer_black{
+        background-color: black;
+        padding: 40px;
+        display: grid;
+       }
+       h5{
+        color: white;
+       }
+        
+       
+       a{
+        text-decoration:none ;
+       }
+       .a26{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+       }
+       .a27{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       }
+       .a28{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 7;
+       }
+       .a29{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 7;
+       }
+       .a30{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 7;
+       }
+       .a31{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 7;
+       }
+     
+       .a32{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+       }
+       .a33{
+        margin-left:10px ;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 9;
+       }
+       a:hover{
+        color:white;
+        background-color: black ;
+       }
+       /* inline style converted into internal style */
+       .c1{
+          color: white;
+          font-size: 25px;  
+       }
+       .c2{
+        margin-left: 7px;
+       }
+       .c3{
+        background-color: white;
+       }
+       .c4{
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 7px;
+       }
+       .c5{
+        color: black;
+       }
+       .c6{
+        font-size: 45px;
+       }
+       .c7{
+        font-weight: 200px;
+       }
+       .c8{
+        text-decoration: none;
+        color: green;
+       }
+       .c9,.c11{
+        font-weight: 400px;
+       }
+       .c10{
+        color: black;
+        text-decoration: underline;
+       }
+     .c13{
+        font-size: 30px;
+       }
+       .c14{
+        text-decoration: none;
+        color: black;
+       }
+       .c15{
+        text-decoration: none;
+        color: black;
+        margin-left: 17px;
+       }
+       .c16{
+        text-decoration:none;
+        color: black;
+        padding: 10px;
+       }
+       .c17{
+        color: white;
+        font-size: 30px;
+       }
+       .c18{
+        color: white;
+       }
+       .c19{
+        color: white;
+       }
+     /* inline style converted into internal style  end here*/
+
+       /* navbar style for mobile view start Here. */
+
+ 
+       .mobile-view{
+           color:white;
+            margin-left:40px;
+           }
+       .mobile-nav,.uber-logo{
+        color:white;
+        }
+
+        @media screen and (min-width:769px) and (max-width:2000px){
+           .mobile{
+            display: none;
+           }
+        }
+
+
+
+       @media screen and  (max-width:426px){
+        .section1{
+          display: block;
+          width: 100%;
+        }
+        .a11{
+          width:250px;
+        } 
+        .section2,.section3,.section4,.section5{
+          display: block;
+          width:100%;
+        }
+        .a12,.a15,.a16{
+          width: 50%;
+        }
+        .a28,.a29,.a30,.a31,.a32,.a33{
+          display: block;
+          width: 100%;
+        }
+        .nav_bar{
+      display: none;
+     }
+     }
+
+    @media screen and (max-width:571px){
+       .nav_bar,footer{
+            display: none;
+   }
+   .section1,.section2,.section3,.section4,.section5{
+                             display: block;
+   }
+   
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+   
+   <nav class="nav_bar">
+      <div class="left_list">
+         <div class="left-bar  c1" >Uber</div>
+          <div class="dropdown ">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+          Company
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About us </a></li>
+          <li><a class="dropdown-item" href="#">Our offerings</a></li>
+          <li><a class="dropdown-item" href="#">How uber works</a></li>
+          <li><a class="dropdown-item" href="#">Global citizenship</a></li>
+          <li><a class="dropdown-item" href="#">Newsrooms</a></li>
+          <li><a class="dropdown-item" href="#">Investors relationship</a></li>
+          <li><a class="dropdown-item" href="#">Blog</a></li>
+          <li><a class="dropdown-item" href="#">Careers</a></li>
+       </ul>
+        </div>
+      <div class="left-bar">
+        <ul>
+          <li class="hover1"><a class="left-bar"  href="#">Safety</a></li>
+        </ul>
+      </div>
+      <div class="left-bar">
+        <ul>
+          <li class="hover1"><a class="left-bar"  href="#" >Help</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="right_list">
+      
+        <div class="right-bar"><ul><li><a href="#" class="right-bar-link"><img src="https://static.vecteezy.com/system/resources/thumbnails/000/357/012/small/1__288_29.jpg" height="40px" alt="">EN</a></li></ul></div>
+        <div class="right-bar"><ul><li><a href="#" class="right-bar-link"><img src="https://cdn-icons-png.flaticon.com/128/17/17704.png" height="30px" alt="img2" class="c3" ><strong class="c2">Products</a></li></ul></div>
+        <div class="right-bar"><ul><li><a href="#" class="right-bar-link hover1">Login</a></li></ul></div>
+       <div class="right-bar "><ul><li><button class="right-bar  c4" ><a  href="../Main-project.html/uber_signin_form.html" class="right-bar-link hover1  c5" style="color: black;">Signin</a></button></li></ul></div>
+    </div>
+    </nav>
+            <!-- navbar end -->
+
+            <!-- mobile navbar start Here, it is a bootstrap navbar. -->
+
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark  mobile">
+              <h2 class="uber-logo">Uber</h2>
+               <h4 class="mobile-nav">Login</h4>
+               <h4 class="mobile-view">Signin</h4>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Safety</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>    
+                </ul>
+              </div>  
+            </nav>
+            <!-- mobile navbar end Here. -->
+    
+   <main>
+     <div class="section1">
+      <div class="box1">
+       <div class="a7">
+         <h2 class="c6" style="font-size: 45px;">Go anywhere with  Uber</h2>
+         <p  class="c7" style="font-weight: 200;">Request a ride, hop in, and go.</p>
+       </div>`
+      <div class="a8"> <input type="text" placeholder="Enter location" class="input1"></div>
+      <div class="a9"> <input type="text" placeholder="Enter destination" class="input1"></div>
+      <div class="a10"><a  href="../uber1.html" class="c8" >See prices</a></div> 
+      `
+   </div>
+   <div class="box2">
+      <div class="a11"><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_698/v1684852612/assets/ba/4947c1-b862-400e-9f00-668f4926a4a2/original/Ride-with-Uber.png" alt="123" class="a11"></div>
+   </div>
+     
+     </div>
+ <!-- section1 end and (main tag continue) -->
+      <div class="section2">
+      <div class="box3">
+      <div class="a12"><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_502,h_502/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png" alt="123" class="a12"> </div>
+      </div>                       
+      <div class="box4">
+         <h3 class="a13">Drive when you want, make what you need</h3>
+         <br>
+         <p class="c9" >Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental  through Uber.</p>
+       <form>
+         <button class="black-button_1" formaction="../uber1.html">Get started</button>
+      </form>
+      <a href="#" class="c10" >Already have an account? Sign in</a>
+      </div>
+    </div>
+ <!-- section2 end and(main tag continue) -->
+         <div class="section3">
+               <div class="box5">
+               <h3 class="a14">The Uber you know, reimagined for business</h3>
+               <br>
+               <p class="c11" >Uber for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+             <form>
+               <button class="black-button_1">Get started</button>
+            </form>
+            <a href="#" class="c10">Check out your solutions</a>
+            </div>
+            <div class="box6">
+               <div class="a15"><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_502,h_502/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png" alt="img" class="a15"> </div>
+               </div>
+          </div>  
+ <!-- section3 end and (main tag continue) -->
+     <div class="section4">
+       <div class="box7">
+       <div class="a16"><img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_502,h_502/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg" alt="img" class="a16"> </div>
+       </div>
+      <div class="box8">
+         <h3 class="a17">Make money by renting out your car</h3>
+         <br>
+         <p class="c9" >Connect with thousands of drivers and earn more per week with Uber’s free fleet management tools.</p>
+       <form>
+         <button class="black-button_1" formaction="../uber2.html">Get started</button>
+      </form>
+    
+      </div>
+    </div> 
+ <!-- section4 end and (main tag continue) -->
+ <div class="section5">
+    <h4 class="c13" >It's easier in the apps</h5>
+   <div class="box9">
+      <img class="a18" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_150,h_150/v1690807720/assets/a5/9986ad-0d9f-4396-8539-389bce97f579/original/Final-Download-Uber-App.png" height="200px" alt="">
+      <div class="a19">
+      <h5> <a href="#" class="c14" >Download the Uber app</a></h5>
+      <p class="a20"><a href="#" class="c15" >Scan to download</a></p>
+     </div>
+      <img class="a21" src="https://cdn.vectorstock.com/i/1000x1000/31/75/right-arrow-icon-black-symbol-vector-27803175.webp" height="40px" alt="">
+      
+ </div>
+ <div class="box10">
+     <img class="a22" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_150,h_150/v1690807720/assets/a5/9986ad-0d9f-4396-8539-389bce97f579/original/Final-Download-Uber-App.png" height="200px" alt="">
+     <div class="a23">
+     <h5><a href="#" class="c16" > Download the Driver app</a></h5>
+     <p class="a24"><a href="#" class="c15" >Scan to download</a></p>
+    </div>
+     <img class="a25" src="https://cdn.vectorstock.com/i/1000x1000/31/75/right-arrow-icon-black-symbol-vector-27803175.webp" height="40px" alt="">
+  </div>
+  </div>
+</main>
+   <!-- section5 end and main tag end. -->
+   <footer>
+      <div class="footer_black">
+        <div class="a26"><h4 class="c17">Uber</h4></div>
+        <div class="a27"><a href="#" class="c18" >Visit help center</a></div>
+        <div class="a28">
+          <ul class="a28">
+            <li class="c19" >Company</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our offerings</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Investor</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Gift cards</a></li>
+          </ul>
+        </div>
+        <div class="a29">
+          <ul class="a29">
+            <li class="c19" >Products</li>
+            <li><a href="#">Ride</a></li>
+            <li><a href="#">Drive</a></li>
+            <li><a href="#">Deliver</a></li>
+            <li><a href="#">Eat</a></li>
+            <li><a href="#">Uber for business</a></li>
+            <li><a href="#">Uber freight</a></li>
+          </ul>
+        </div>
+        <div class="a30">
+          <ul class="a30">
+            <li class="c19" >Global citizenship</li>
+            <li><a href="#">safety</a></li>
+            <li><a href="#">Diversity and Inclusion</a></li>
+          </ul>
+        </div>
+        <div class="a31">
+          <ul class="a31" >
+            <li class="c19" >Travel</li>
+            <li><a href="#">Reserve</a></li>
+            <li><a href="#">Airports</a></li>
+            <li><a href="#">Cities</a></li>
+          </ul>
+        </div>
+        <div class="a32"><img  class="c19" style="color: white;" src="data:image/jpeg;base64,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" height="15%" class="c19"  alt="img">
+         <a href="#" class="c19" >Get it on Google Play</a>
+        </div>
+        <div class="a33"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEUAAAD////ExMQvLy/k5ORycnKrq6uUlJTd3d1paWn39/f8/PzZ2dkFBQWFhYXz8/Obm5thYWHs7OwdHR1CQkLR0dEZGRklJSWzs7N6enpSUlJcXFzLy8ukpKQODg6Ojo5JSUk4ODgKpI7AAAAEf0lEQVR4nO2c2YKqMAyGSyk7w1JFWV3e/yUPjIpQUA/t34ELv6u5UPknhCRNS4jxhFEnNX/In/Njpg5lAyGk/8u1zL/X88S03Iko5q2p6IbHxqLoqlZ6YNKhKHttOQ/sp6jNaLqr6kTRtZUMoTdRTJ8/nXanpV8x2a8oTc/dyUoo86PF3/M6Ua4GQYRcbR507rFcFHFbURZeEbnmjzgoIcoyiA6POvt9cC6Wf9tkBP/o7bJnFvNTiR+gxEFrKoeple8lfsEhMv/KO6p4oEnuKaoI2KVSPtQkF5dNgq2fzJGdpPycgCWRnTvWZGB/Xo5c0JStLailFDTJhE44maCJH9dWREghGgoeAyUQDRUvrlvwHERDScUDMImgKVxbUIdw9+K19XRcxgkm0FGnLcbaXohqC46RpmZtOTfo8N6d11ZzZ1Db+RtoTNwIek31BrLLnYckXqwTyPeV56XldU5U9sx3x6pwkqRpkqSo9Oo5VrbLY78l5jxsyuedCvzYTcrD/WNlE/J+oRX4vPa03VMvF8pdg+cPK5wO/cfSnBsT4kZmZfOR1A2m1zL8sDoMP2VGsx/rZNnwhe+ezl+qJXR6/7Jy/+XHWruCc0/07mKGz/JzFCUZf2Gknhz5aIpLAmncHUrSSSwqFWAofw9xmmDLiRqpqbUVQlWD1QRZo1qfr7IU5bRjzkRnNQCVzeuYKQlTD1WT/oAqHJBr2OfLLIIBuk+T/oAiASJ0QsNmqwlR7u2xmjD7ZeBHD9JeOILdHFKrg90cs9lpQzX5189X/A+wGSaHaJr05tQoIaKwLlVjynNYYf5LAtGEDeeQBIOOUj5Ek9jFVATULE7frj+XAjomgn34QB3HCCoKtP+AFQXqg2JFgRouZ6goULcfaylQux8rCnRUBCuKb1FUgBFlfeoVLgMTE7BpBuTp2IRshJAOngleYF0QotBr9hoiCrw+xtSe2DwDip/o9gYmKqBF+YgdI7CntzcQ0McTT4qoA6jUwYmmQz2u79BtWANhK3gTvaVW9fZUgyjl/dETtlB4QNViO7aX1+M3FwVRnh5TKS5uNDx/HVzFUuBCvUctN+/w8bNDyVCaXF21WeXpMJVyXwh4JuGB+imACi9Kvc3/gzeVsib87ihmPwRcgPqQHTZwrQB6yQBbVmE2jkiJjFWwF62AZ3D8C0oU8MAL8Kgz7GgQ4KTLE5CvY8/Og/bZwG8XQ4JVePh8oUUAnsDgAtaEcCsdL2OIL8otBbS1PWavpgpzWGLCVTz5vQTQuYQpl5e2ipmbZaHLXsrG9IZnOc7XVjS6p/5DGc0f/qZa33yYLrm4LVzQCsWqItDi4wOKcXKOk5l+kzcOHzH6becZnN6z4uxVo+KY93mJ/c0bkScrqcOwtqN3RaRZJDQMaVNsYujIly9fvnxZhRXGhX3iBz0YBIEJH6ECoMIPm1HH0TCWRxmqZYCRGibTM+pJCUvbUCwFXI3jw2TxdA9ak+A+aG2TI+m2ObxvQ6oGYw63ORBym6MzjU0OGf21FnWqdcaxVuNxrP8AIKE6bzq7NgQAAAAASUVORK5CYII=" height="15%" alt="">
+          <a href="#" class="c19" >Download on the App Store</a>
+        </div>
+      </div>
+   </footer>
+
+</body>
+</html>
